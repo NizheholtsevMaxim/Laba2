@@ -1,0 +1,40 @@
+input:checked {
+    margin-right: 100px;
+}
+
+input:checked::after {
+    margin-left: 2rem;
+    content: "checked";
+    font-size: 14px;
+    background-color: coral;
+    color: whitesmoke;
+}
+
+#first {
+    background-color: green;
+    order: 3;
+}
+
+#second,
+#third {
+    background-color: blue;
+}
+
+#second {
+    order: 4;
+}
+
+#third {
+    order: 1;
+}
+
+#fourth {
+    background-color: red;
+    order: 2;
+}
+
+.spanContainer {
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+}

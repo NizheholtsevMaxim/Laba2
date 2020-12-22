@@ -1,97 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laba 2</title>
-    <link media="all" rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700,700italic" type="text/css">
+    <title>CSS Lab</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <style>
-      body {
-        margin: 0;
-        color: #7e7e7e;
-        font: 17px/1.412 "Istok Web", "Arial", "Helvetica", sans-serif;
-        background: #f9f9f9;
-        overflow-y: scroll;
-        min-width: 320px;
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: none;
-      }
+        div,
+        span {
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+        }
+        
+        .radioContainer {
+            background-color: khaki;
+        }
+        
+        .item {
+            margin-right: 10px;
+        }
     </style>
-  </head>
-  <body class="home-page">
-    <div id="wrapper">
-      <header id="header">
-        <div class="panel">
-          <div id='header-container' class="container">
-            <strong class="logo"><a href="#">Laba 2</a></strong>
-            <ul>
-              <li><a href="#">Home</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="hero">
-          <div class="img">
-            <div class="s1">
-              <div class="s2" style="background: url('images/banner.jpg') no-repeat 0 0; background-size: cover; width: 100%; height: 300px; display:flex; justify-content: center; align-items: center; color: #fff;">
-                <h1>Лабораторное работа №2</h1>
-              </div>
-            </div>
-          </div>
+</head>
 
+<body>
+    <div>
+        <div style="background-color: bisque;">
+            <h2>I'm relatively positioned div</h2>
         </div>
-        <div class="navigation">
-          <nav>
-            <ul>
-              <li class="active"><a href="#">Пункт 1</a></li>
-              <li><a href="#">Пункт 2</a></li>
-              <li><a href="#">Пункт 3</a></li>
-              <li><a href="#">Пункт 4</a></li>
-            </ul>
-          </nav>
+        <div style="position: absolute; top: 2rem; right: 3rem; background-color: coral;">
+            <h2>I'm absolutely positioned div</h2>
         </div>
-      </header>
-      <div id="main">
-
-        <div id='var-6' class="container">
-          <h1>Вариант №6</h1>
-          <table id='table-1' border='0' cellspacing="0">
-            <thead>
-              <tr>
-                <th ></th>
-                <th>2017</th>
-                <th>2018</th>
-                <th>2019</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>ИТех</td>
-                <td align='center'>93</td>
-                <td align='center'>97</td>
-                <td align='center'>98</td>
-              </tr>
-              <tr>
-                <td>КСх</td>
-                <td align='center'>91</td>
-                <td align='center'>98</td>
-                <td align='center'>97</td>
-              </tr>
-              <tr>
-                <td>СПО</td>
-                <td align='center'>96</td>
-                <td align='center'>94</td>
-                <td align='center'>97</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <footer id="footer">
-        <ul>
-          <li>© Copyright 2020 Maxim</li>
-        </ul>
-      </footer>
     </div>
-  </body>
+
+    <hr />
+
+    <span style="float: left;">
+        <h1>i'm span floated to left</h1>
+    </span>
+    <span style="float: right;">
+        <h1>I'm span floated to right</h1>
+    </span>
+
+    <hr style="margin-top: 8rem;" />
+
+    <div class="radioContainer">
+        <h3>Select radio</h3>
+        <input type="radio" id="one" name="radio" value="one">
+        <label for="one">One</label><br>
+        <input type="radio" id="two" name="radio" value="two">
+        <label for="two">Two</label><br>
+        <input type="radio" id="three" name="radio" value="three">
+        <label for="three">Three</label>
+    </div>
+
+    <hr/>
+
+    <div class="spanContainer">
+        <span class="item" id="first"><h2>Я первый</h2></span>
+        <span class="item" id="second"><h2>Я второй</h2></span>
+        <span class="item" id="third"><h2>Я третий</h2></span>
+        <span class="item" id="fourth"><h2>Я четвёртый</h2></span>
+    </div>
+</body>
+
 </html>
