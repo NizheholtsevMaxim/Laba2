@@ -15,16 +15,17 @@ input:checked::after {
     order: 3;
 }
 
-#second,
 #third {
     background-color: blue;
 }
 
 #second {
+    background-color: blue;
     order: 4;
 }
 
 #third {
+    background-color: blue;
     order: 1;
 }
 
